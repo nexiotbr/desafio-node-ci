@@ -33,7 +33,7 @@ if  ( op === '/') {
     try {
         res = div(a, b)        
     } catch (error) {
-        res = error
+        res = error.message
     }
 } else
 if  ( op === '^') {

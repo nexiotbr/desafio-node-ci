@@ -56,6 +56,8 @@ describe('stdout behaviour', () => {
             testApp.kill('SIGINT')
             done()
         })
+
+
     })
 
 
