@@ -30,7 +30,11 @@ if  ( op === '*') {
     res = times(a, b)
 } else
 if  ( op === '/') {
-    res = div(a, b)
+    try {
+        res = div(a, b)        
+    } catch (error) {
+        res = error
+    }
 } else
 if  ( op === '^') {
     res = expo(a, b)

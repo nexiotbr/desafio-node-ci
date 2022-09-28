@@ -16,8 +16,12 @@ test("div 18 * 3 to be equal 6", () => {
    expect(div(18,3)).toBe(6); 
 });
 
-test("div 18 * 0 to be equal 'div by zero'", () => {
-   expect(div(18,0)).toBe('div by zero'); 
+test("div 18 * 0 to throw 'div by zero'", () => {
+
+   expect(() => {
+      div(18,0);
+    }).toThrow('div by zero');
+
 });
 
 test("expo 2 ** 4 to be equal 16", () => {

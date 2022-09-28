@@ -12,7 +12,7 @@ function times(a, b) {
 }
 
 function div(a, b) {
-    if (b===0) return 'div by zero'
+    if (b===0) throw 'div by zero'
     return a / b;
 }
 
