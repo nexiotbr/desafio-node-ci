@@ -19,7 +19,7 @@ let op = args[3]
 let a = parseFloat(args[2])
 let b = parseFloat(args[4])
 
-var res = 0
+let res = 0
 if  ( op === '+') {
     res = sum(a, b)
 } else
